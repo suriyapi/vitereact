@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import picExp from "../../assets/exp_site.png";
 import piclittlelemon from "../../assets/littlelemon.png";
 import { useState } from "react";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 const Experience = () => {
 
@@ -25,7 +26,10 @@ const Experience = () => {
                     </div>
                 </div>
                 <div className="grid gap-y-4">
-                    <div className={`text-primaryAccent ${isMouseEnter['exp1'] ? "text-primaryTitle": ""}`}>Fullstack · Sport Analysis System</div>
+                    <div className={`text-primaryAccent ${isMouseEnter['exp1'] ? "text-primaryTitle": ""}`}>
+                        Fullstack · Sport Analysis System
+                        <FontAwesomeIcon className={`text-xs -rotate-45 duration-500 ease-out ${isMouseEnter['exp1'] ?"translate-x-1 -translate-y-1": ""} `} icon={faArrowRight} />
+                    </div>
                     <div className="flex gap-4 text-xl">
                         <a href="https://suriyapi.github.io/vite/" target="_blank" className="hover:scale-110"><FontAwesomeIcon icon={faGithub} /></a>
                         <a href="https://suriyapi.github.io/vite/" target="_blank" className="hover:scale-110"><FontAwesomeIcon icon={faMedium} /></a>
@@ -48,15 +52,18 @@ const Experience = () => {
                         <span className={`text-sm ${isMouseEnter['exp2'] ? "text-primaryTitle": ""}`}>2022-2023</span>
                     </div>
                     <div>
-                        <img src={piclittlelemon} className="w-5/6 rounded-md border-2 border-primarySubcontent" />
+                        <img src={picExp} className="w-5/6 rounded-md border-2 border-primarySubcontent" />
                     </div>
                 </div>
                 <div className="grid gap-y-4">
-                    <div className={`text-primaryAccent ${isMouseEnter['exp2'] ? "text-primaryTitle": ""}`}>Fullstack · Sport Analysis System</div>
+                    <div className={`text-primaryAccent ${isMouseEnter['exp2'] ? "text-primaryTitle": ""}`}>
+                        Fullstack · Sport Analysis System
+                        <FontAwesomeIcon className={`text-xs -rotate-45 duration-500 ease-out ${isMouseEnter['exp2'] ?"translate-x-1 -translate-y-1": ""} `} icon={faArrowRight} />
+                    </div>
                     <div className="flex gap-4 text-xl">
-                        <FontAwesomeIcon icon={faGithub} />
-                        <FontAwesomeIcon icon={faMedium} />
-                        <FontAwesomeIcon icon={faYoutube} />
+                        <a href="https://suriyapi.github.io/vite/" target="_blank" className="hover:scale-110"><FontAwesomeIcon icon={faGithub} /></a>
+                        <a href="https://suriyapi.github.io/vite/" target="_blank" className="hover:scale-110"><FontAwesomeIcon icon={faMedium} /></a>
+                        <a href="https://suriyapi.github.io/vite/" target="_blank" className="hover:scale-110"><FontAwesomeIcon icon={faYoutube} /></a>
                     </div>
                     <div className="text-sm">Designing and developing a sports data analysis system that scrapes data from various sports websites, processes it, and presents different profit-making possibilities in real-time for customers.</div>
                     <div className="flex gap-4 text-sm">
