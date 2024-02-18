@@ -5,10 +5,10 @@ import piclittlelemon from "../../assets/littlelemon.png";
 
 const Experience = () => {
     return (
-        <div className='space-y-10'>
+        <div className="">
             <div className='text-primaryAccent font-medium'>Experience</div>
 
-            <div className="grid grid-cols-[25%_75%]">
+            <div className="grid grid-cols-[25%_75%] bg-gray-400 rounded-md px-2 py-6">
                 <div>
                     <div>
                         <span className="text-sm">2022-2023</span>
@@ -32,7 +32,7 @@ const Experience = () => {
                 </div>
             </div>
 
-            <div className="grid grid-cols-[25%_75%]">
+            <div className="grid grid-cols-[25%_75%] px-2 py-6">
                 <div>
                     <div>
                         <span className="text-sm">2022-2023</span>
