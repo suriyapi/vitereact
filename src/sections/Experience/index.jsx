@@ -27,9 +27,9 @@ const Experience = () => {
                 <div className="grid gap-y-4">
                     <div className={`text-primaryAccent ${isMouseEnter['exp1'] ? "text-primaryTitle": ""}`}>Fullstack · Sport Analysis System</div>
                     <div className="flex gap-4 text-xl">
-                        <FontAwesomeIcon icon={faGithub} />
-                        <FontAwesomeIcon icon={faMedium} />
-                        <FontAwesomeIcon icon={faYoutube} />
+                        <a href="https://suriyapi.github.io/vite/" target="_blank" className="hover:scale-110"><FontAwesomeIcon icon={faGithub} /></a>
+                        <a href="https://suriyapi.github.io/vite/" target="_blank" className="hover:scale-110"><FontAwesomeIcon icon={faMedium} /></a>
+                        <a href="https://suriyapi.github.io/vite/" target="_blank" className="hover:scale-110"><FontAwesomeIcon icon={faYoutube} /></a>
                     </div>
                     <div className="text-sm">Designing and developing a sports data analysis system that scrapes data from various sports websites, processes it, and presents different profit-making possibilities in real-time for customers.</div>
                     <div className="flex gap-4 text-sm">
