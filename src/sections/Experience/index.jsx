@@ -6,26 +6,26 @@ import { useState } from "react";
 
 const Experience = () => {
 
-    const [isMouseEnter, setIsMouseEnter] = useState(false);
+    const [isMouseEnter, setIsMouseEnter] = useState({});
 
     return (
         <div className="">
             <div className='text-primaryAccent font-medium'>Experience</div>
 
-            <div className={`grid grid-cols-[25%_75%]  rounded-md px-2 py-6 transition-all ${isMouseEnter ? "bg-gray-400": ""}`}
-                onMouseEnter={() => setIsMouseEnter(true)}
-                onMouseLeave={() => setIsMouseEnter(false)}
+            <div className={`grid grid-cols-[25%_75%]  rounded-md px-2 py-6 transition-all ${isMouseEnter['exp1'] ? "bg-gray-400": ""}`}
+                onMouseEnter={() => setIsMouseEnter({'exp1': true})}
+                onMouseLeave={() => setIsMouseEnter({'exp1': false})}
             >
                 <div>
                     <div>
-                        <span className={`text-sm ${isMouseEnter ? "text-primaryTitle": ""}`}>2022-2023</span>
+                        <span className={`text-sm ${isMouseEnter['exp1'] ? "text-primaryTitle": ""}`}>2022-2023</span>
                     </div>
                     <div>
                         <img src={picExp} className="w-5/6 rounded-md border-2 border-primarySubcontent" />
                     </div>
                 </div>
                 <div className="grid gap-y-4">
-                    <div className={`text-primaryAccent ${isMouseEnter ? "text-primaryTitle": ""}`}>Fullstack · Sport Analysis System</div>
+                    <div className={`text-primaryAccent ${isMouseEnter['exp1'] ? "text-primaryTitle": ""}`}>Fullstack · Sport Analysis System</div>
                     <div className="flex gap-4 text-xl">
                         <FontAwesomeIcon icon={faGithub} />
                         <FontAwesomeIcon icon={faMedium} />
@@ -33,23 +33,26 @@ const Experience = () => {
                     </div>
                     <div className="text-sm">Designing and developing a sports data analysis system that scrapes data from various sports websites, processes it, and presents different profit-making possibilities in real-time for customers.</div>
                     <div className="flex gap-4 text-sm">
-                        <div className={`bg-primarySubcontent px-2 py-1 rounded-md ${isMouseEnter ? "text-primaryTitle": ""}`}>React</div>
-                        <div className={`bg-primarySubcontent px-2 py-1 rounded-md ${isMouseEnter ? "text-primaryTitle": ""}`}>Taiwind</div>
+                        <div className={`bg-primarySubcontent px-2 py-1 rounded-md ${isMouseEnter['exp1'] ? "text-primaryTitle": ""}`}>React</div>
+                        <div className={`bg-primarySubcontent px-2 py-1 rounded-md ${isMouseEnter['exp1'] ? "text-primaryTitle": ""}`}>Taiwind</div>
                     </div>
                 </div>
             </div>
 
-            <div className="grid grid-cols-[25%_75%] px-2 py-6">
+            <div className={`grid grid-cols-[25%_75%]  rounded-md px-2 py-6 transition-all ${isMouseEnter['exp2'] ? "bg-gray-400": ""}`}
+                onMouseEnter={() => setIsMouseEnter({'exp2': true})}
+                onMouseLeave={() => setIsMouseEnter({'exp2': false})}
+            >
                 <div>
                     <div>
-                        <span className="text-sm">2022-2023</span>
+                        <span className={`text-sm ${isMouseEnter['exp2'] ? "text-primaryTitle": ""}`}>2022-2023</span>
                     </div>
                     <div>
                         <img src={piclittlelemon} className="w-5/6 rounded-md border-2 border-primarySubcontent" />
                     </div>
                 </div>
                 <div className="grid gap-y-4">
-                    <div className="text-primaryAccent">Fullstack · Sport Analysis System</div>
+                    <div className={`text-primaryAccent ${isMouseEnter['exp2'] ? "text-primaryTitle": ""}`}>Fullstack · Sport Analysis System</div>
                     <div className="flex gap-4 text-xl">
                         <FontAwesomeIcon icon={faGithub} />
                         <FontAwesomeIcon icon={faMedium} />
@@ -57,12 +60,10 @@ const Experience = () => {
                     </div>
                     <div className="text-sm">Designing and developing a sports data analysis system that scrapes data from various sports websites, processes it, and presents different profit-making possibilities in real-time for customers.</div>
                     <div className="flex gap-4 text-sm">
-                        <div className="bg-primarySubcontent px-2 py-1 rounded-md hover:text-primaryTitle">React</div>
-                        <div className="bg-primarySubcontent px-2 py-1 rounded-md">Taiwind</div>
-
+                        <div className={`bg-primarySubcontent px-2 py-1 rounded-md ${isMouseEnter['exp2'] ? "text-primaryTitle": ""}`}>React</div>
+                        <div className={`bg-primarySubcontent px-2 py-1 rounded-md ${isMouseEnter['exp2'] ? "text-primaryTitle": ""}`}>Taiwind</div>
                     </div>
                 </div>
-
             </div>
 
         </div>
