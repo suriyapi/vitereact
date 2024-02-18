@@ -36,9 +36,12 @@ const Experience = () => {
                         <a href="https://suriyapi.github.io/vite/" target="_blank" className="hover:scale-110"><FontAwesomeIcon icon={faYoutube} /></a>
                     </div>
                     <div className="text-sm">Designing and developing a sports data analysis system that scrapes data from various sports websites, processes it, and presents different profit-making possibilities in real-time for customers.</div>
-                    <div className="flex gap-4 text-sm">
-                        <div className={`bg-primarySubcontent px-2 py-1 rounded-md ${isMouseEnter['exp1'] ? "text-primaryTitle": ""}`}>React</div>
-                        <div className={`bg-primarySubcontent px-2 py-1 rounded-md ${isMouseEnter['exp1'] ? "text-primaryTitle": ""}`}>Taiwind</div>
+                    
+                    <div>
+                        <div className="flex gap-4 text-sm">
+                            <div className={`bg-primarySubcontent px-2 py-1 rounded-md ${isMouseEnter['exp1'] ? "text-primaryTitle": ""}`}>React</div>
+                            <div className={`bg-primarySubcontent px-2 py-1 rounded-md ${isMouseEnter['exp1'] ? "text-primaryTitle": ""}`}>Taiwind</div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -66,9 +69,11 @@ const Experience = () => {
                         <a href="https://suriyapi.github.io/vite/" target="_blank" className="hover:scale-110"><FontAwesomeIcon icon={faYoutube} /></a>
                     </div>
                     <div className="text-sm">Designing and developing a sports data analysis system that scrapes data from various sports websites, processes it, and presents different profit-making possibilities in real-time for customers.</div>
-                    <div className="flex gap-4 text-sm">
-                        <div className={`bg-primarySubcontent px-2 py-1 rounded-md ${isMouseEnter['exp2'] ? "text-primaryTitle": ""}`}>React</div>
-                        <div className={`bg-primarySubcontent px-2 py-1 rounded-md ${isMouseEnter['exp2'] ? "text-primaryTitle": ""}`}>Taiwind</div>
+                    <div>
+                        <div className="flex gap-4 text-sm">
+                            <div className={`bg-primarySubcontent px-2 py-1 rounded-md ${isMouseEnter['exp2'] ? "text-primaryTitle": ""}`}>React</div>
+                            <div className={`bg-primarySubcontent px-2 py-1 rounded-md ${isMouseEnter['exp2'] ? "text-primaryTitle": ""}`}>Taiwind</div>
+                        </div>
                     </div>
                 </div>
             </div>
