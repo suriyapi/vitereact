@@ -55,7 +55,7 @@ const Experience = () => {
                         <span className={`text-sm ${isMouseEnter['exp2'] ? "text-primaryTitle": ""}`}>2022-2023</span>
                     </div>
                     <div>
-                        <img src={picExp} className="w-5/6 rounded-md border-2 border-primarySubcontent" />
+                        <img src={piclittlelemon} className="w-5/6 rounded-md border-2 border-primarySubcontent" />
                     </div>
                 </div>
                 <div className="grid gap-y-4">
